@@ -1,0 +1,18 @@
+ja:
+  subtasks_field_parent: サブプロジェクト
+  subtasks_field_parent_issue: 親チケット
+  subtasks_field_parent_title: 親チケット
+
+  subtasks_label_view: "表示オプション"
+  subtasks_label_children: 子チケット
+  subtasks_label_parents: 親チケット
+  subtasks_label_view_option_parents_do_not_show: 表示しない
+  subtasks_label_view_option_parents_show_always: 常に表示する
+  subtasks_label_view_option_parents_show_and_group: 一つとして表示する
+  subtasks_label_view_option_show_parents: 親チケットを
+  subtasks_label_subissues: チケット階層
+  subtasks_label_settings_subissues_list_columns: サブタスクリストに表示する列
+  subtasks_label_settings_delete_children: 親チケットを削除した時にサブチケットも削除する
+
+  subtasks_button_add_subissue: サブチケット追加
+
