@@ -1,0 +1,18 @@
+zh:
+  subtasks_field_parent: 子问题
+  subtasks_field_parent_issue: 父问题
+  subtasks_field_parent_title: 父问题
+
+  subtasks_label_view: "查看选项"
+  subtasks_label_children: 子问题
+  subtasks_label_parents: 父问题
+  subtasks_label_view_option_parents_do_not_show: 不显示
+  subtasks_label_view_option_parents_show_always: 总是显示
+  subtasks_label_view_option_parents_show_and_group: 一起显示
+  subtasks_label_view_option_show_parents: 显示父问题
+  subtasks_label_subissues: 问题结构
+  subtasks_label_settings_subissues_list_columns: 子问题中要显示的列
+  subtasks_label_settings_delete_children: 父问题被删除时删除子问题
+
+  subtasks_button_add_subissue: 添加子问题
+
