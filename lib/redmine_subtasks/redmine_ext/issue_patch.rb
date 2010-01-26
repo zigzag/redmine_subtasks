@@ -187,7 +187,9 @@ module RedmineSubtasks
 
           def done_ratio
             if leaf? 
-              read_attribute(:done_ratio)
+              insight = todo_hours + spent_hours
+              return 0 if (insight == 0)
+              100 - (todo_hours / insight * 100).to_i
             else
               @total_planned_days ||= 0
               @total_actual_days ||= 0
@@ -247,6 +249,13 @@ module RedmineSubtasks
 
           def duration1
             (start_date && due_date) ? (due_date - start_date + 1) : 0
+          end
+          
+          def todo_hours
+            return @todo_hours if @todo_hours
+            last_entry = time_entries.sort_by(&:spent_on).sort_by(&:updated_on).last
+            last_todo_wrapper = last_entry.custom_value_for(CustomField.find_by_name('TODO').id) if last_entry
+            @todo_hours = (last_todo_wrapper ? last_todo_wrapper.value.to_f : estimated_hours) || 0
           end
 
         end
